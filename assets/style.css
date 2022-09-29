@@ -1,24 +1,23 @@
 body {
-  background-color: antiquewhite;
+  background-color: burlywood;
+  margin: 0;
   color: white;
-  margin: 0; /*rid scrollbar*/
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Monospace, Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container {
-  background-color: brown;
+  background-color: rgb(218, 154, 98);
   padding: 3rem;
   border-radius: 1rem;
-  border: 2px solid tan;
+  border: 2px solid beige;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;    
+  align-items: center;
+  flex-direction: column;
 }
 
 .form {
@@ -31,12 +30,33 @@ body {
 }
 
 .title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 2rem;
   text-align: center;
+}
+
+.text-area {
+  margin-bottom: 2rem;
 }
 
 label {
   font-weight: bold;
+}
+
+.password-display {
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  height: 2rem;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  border-radius: .5rem;
 }
 
 .character-amount-container {
@@ -45,20 +65,7 @@ label {
 }
 
 .number-input {
-  width: 2rem;
-}
-
-.password-display {
-  background-color: white;
-  color: black;
-  padding: 1rem;
-  border: 1px solid #333;
-  height: 2rem;
-  width: 350px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  word-break: break-all; /*if long password to remain in container*/
+  width: 3rem;
 }
 
 .btn {
@@ -66,12 +73,12 @@ label {
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   font-weight: bold;
   cursor: pointer;
   border-radius: 1rem;
 }
 
 .btn:hover {
-  background-color: #ffffff33;
+  background-color: #FFFFFF33;
 }
