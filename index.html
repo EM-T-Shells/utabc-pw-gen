@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="assets/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Password Generator</h1>
+      <h3 class="password-display">Password</h3>
+      <form class="form">
+        <label for="">Password Size</label>
+        <div class="character-amount-container"> <!--to keep range slider and number input in same column-->
+          <input type="range" min="1" max="128" value="8" id="characterAmountRange">
+          <input class="number-input" type="number" min="1" max="128" value="8" id="characterAmountNumber">
+        </div>
+        
+        <label for="Uppercase">Uppercase</label>
+        <input type="checkbox" id="Uppercase">
+
+        <label for="Lowercase">Lowercase</label>
+        <input type="checkbox" id="Lowercase">
+        
+        <label for="Numbers">Numbers</label>
+        <input type="checkbox" id="Numbers">
+
+        <label for="Symbols">Symbols</label>
+        <input type="checkbox" id="Symbols">
+        
+        <button type="submit">Generate Password</button>
+
+      </form>
+    </div>
+  </body>
+</html>
