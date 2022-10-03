@@ -101,16 +101,3 @@ function isChecked(){
     return true;
   }
 }
-
-/*
-//show form
-function showHideInputs() {
-  if (document.getElementById('btn-show-inputs').onclick) {
-    document.getElementById('passwordGeneratorForm').style.display='grid'
-    document.getElementById('btn-show-inputs').style.display='none'  
-  }
-  else {
-    document.getElementById('passwordGeneratorForm').style.display='none'
-  }
-}
-*/
