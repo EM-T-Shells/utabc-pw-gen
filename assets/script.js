@@ -1,3 +1,11 @@
+let leggoPWGEN = window.prompt("Ready to create cool and secure password? Type 'Yes' to continue)")
+
+if (leggoPWGEN.toLowerCase() === "yes"){
+  passwordGeneratorForm.style.display = "grid";
+} else {
+  window.location.reload();
+}
+
 const characterAmountRange = document.getElementById('characterAmountRange')
 const characterAmountNumber = document.getElementById('characterAmountNumber')
 const includeLowercaseElement = document.getElementById('includeLowercase')
@@ -93,6 +101,7 @@ function isChecked(){
   }
 }
 
+/*
 //show form
 function showHideInputs() {
   if (document.getElementById('btn-show-inputs').onclick) {
@@ -103,3 +112,4 @@ function showHideInputs() {
     document.getElementById('passwordGeneratorForm').style.display='none'
   }
 }
+*/
