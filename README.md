@@ -24,6 +24,8 @@ https://www.geeksforgeeks.org/javascript-addeventlistener-with-examples/
 https://www.youtube.com/watch?v=zPgC0KryKuA  
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal  
 https://www.youtube.com/watch?v=zPgC0KryKuA  
+https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
+https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/#:~:text=You%20can%20use%20the%20location,method%20responsible%20for%20page%20reloading.
 
 ![]()
 
