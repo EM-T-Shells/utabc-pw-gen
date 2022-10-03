@@ -1,10 +1,10 @@
 setTimeout(function(){
   let leggoPWGEN = window.prompt("Ready to create cool and secure password? Type 'Yes' to continue)")
   if (leggoPWGEN.toLowerCase() === "yes"){
-  passwordGeneratorForm.style.display = "grid";
-  } else {
-  window.location.reload();
-  }
+    passwordGeneratorForm.style.display = "grid";
+    } else {
+    window.location.reload();
+    }
 }, 500);
 
 const characterAmountRange = document.getElementById('characterAmountRange')
