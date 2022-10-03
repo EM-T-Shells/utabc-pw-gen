@@ -24,12 +24,12 @@ characterAmountRange.addEventListener('input', syncCharacterAmount)
 
 form.addEventListener('submit', e => {
   e.preventDefault()
-  const characterAmount = characterAmountNumber.value
-  const includeLowercase = includeLowercaseElement.checked
-  const includeUppercase = includeUppercaseElement.checked
-  const includeNumbers = includeNumbersElement.checked
-  const includeSymbols = includeSymbolsElement.checked
-  const password = generatePassword(characterAmount, includeLowercase, includeUppercase, includeNumbers, includeSymbols)
+  let characterAmount = characterAmountNumber.value
+  let includeLowercase = includeLowercaseElement.checked
+  let includeUppercase = includeUppercaseElement.checked
+  let includeNumbers = includeNumbersElement.checked
+  let includeSymbols = includeSymbolsElement.checked
+  let password = generatePassword(characterAmount, includeLowercase, includeUppercase, includeNumbers, includeSymbols)
   passwordDisplay.innerText = password
 })
 
@@ -48,8 +48,6 @@ function generatePassword(characterAmount,includeLowercase, includeUppercase, in
   return passwordCharacters.join('');
 }
 
-
-
 function arrayFromLowToHigh(low, high) {
   const array = []
   for (let i = low; i <= high; i++) {
@@ -64,4 +62,38 @@ function syncCharacterAmount(e) {
   characterAmountRange.value = value
 }
 
+//checkbox validation
+function isChecked(){
+  let includeLowercase = includeLowercaseElement.checked
+  let includeUppercase = includeUppercaseElement.checked
+  let includeNumbers = includeNumbersElement.checked
+  let includeSymbols = includeSymbolsElement.checked
+  let passwordDisplay = document.getElementById('passwordDisplay')
+  
+  // Get the modal
+  let modal = document.getElementById("myModal");
+  // Get the <span> element that closes the modal
+  let span = document.getElementsByClassName("close")[0];
 
+
+
+  if (includeLowercase === false && includeUppercase === false && includeNumbers === false && includeSymbols === false) {
+    // When the user clicks the button, open the modal 
+    modal.style.display = "block";
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    return false  
+  }
+  else {
+    return true;
+  }
+}
