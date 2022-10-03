@@ -83,14 +83,27 @@ label {
   background-color: #FFFFFF33;
 }
 
+/*shows form*/
+#btn-show-inputs {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;
+}
 
+#btn-show-inputs:hover {
+  background-color: #FFFFFF33;
+}
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 80px; /* Location of the box */
+  padding-top: 55px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -105,7 +118,7 @@ label {
   background-color: #db8411;
   text-align: center;
   color: whitesmoke;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: auto;
   padding: 10px;
   border: 1px solid #888;
@@ -126,3 +139,4 @@ label {
   text-decoration: none;
   cursor: pointer;
 }
+

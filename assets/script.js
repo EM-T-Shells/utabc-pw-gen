@@ -1,4 +1,3 @@
-
 const characterAmountRange = document.getElementById('characterAmountRange')
 const characterAmountNumber = document.getElementById('characterAmountNumber')
 const includeLowercaseElement = document.getElementById('includeLowercase')
@@ -30,7 +29,7 @@ form.addEventListener('submit', e => {
   let includeNumbers = includeNumbersElement.checked
   let includeSymbols = includeSymbolsElement.checked
   let password = generatePassword(characterAmount, includeLowercase, includeUppercase, includeNumbers, includeSymbols)
-  passwordDisplay.innerText = password
+  passwordDisplay.innerText = password 
 })
 
 function generatePassword(characterAmount,includeLowercase, includeUppercase, includeNumbers, includeSymbols) {
@@ -39,7 +38,6 @@ function generatePassword(characterAmount,includeLowercase, includeUppercase, in
   if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
   if (includeSymbols) charCodes = charCodes.concat(SYMBOL_CHAR_CODES)
   if (includeNumbers) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
- 
   const passwordCharacters = []
   for (let i = 0; i < characterAmount; i++) {
     const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
@@ -68,14 +66,11 @@ function isChecked(){
   let includeUppercase = includeUppercaseElement.checked
   let includeNumbers = includeNumbersElement.checked
   let includeSymbols = includeSymbolsElement.checked
-  let passwordDisplay = document.getElementById('passwordDisplay')
-  
+
   // Get the modal
   let modal = document.getElementById("myModal");
   // Get the <span> element that closes the modal
   let span = document.getElementsByClassName("close")[0];
-
-
 
   if (includeLowercase === false && includeUppercase === false && includeNumbers === false && includeSymbols === false) {
     // When the user clicks the button, open the modal 
@@ -95,5 +90,16 @@ function isChecked(){
   }
   else {
     return true;
+  }
+}
+
+//show form
+function showHideInputs() {
+  if (document.getElementById('btn-show-inputs').onclick) {
+    document.getElementById('passwordGeneratorForm').style.display='grid'
+    document.getElementById('btn-show-inputs').style.display='none'  
+  }
+  else {
+    document.getElementById('passwordGeneratorForm').style.display='none'
   }
 }
