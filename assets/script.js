@@ -1,5 +1,6 @@
-let leggoPWGEN = window.prompt("Ready to create cool and secure password? Type 'Yes' to continue)")
-
+setTimeout(function(){
+    let leggoPWGEN = window.prompt("Ready to create cool and secure password? Type 'Yes' to continue)")
+}, 1500);
 if (leggoPWGEN.toLowerCase() === "yes"){
   passwordGeneratorForm.style.display = "grid";
 } else {
