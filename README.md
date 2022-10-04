@@ -5,17 +5,17 @@ The purpose for this project was to display a few basic ways on how to apply Jav
 
 
 ## Installation
-Clone this repository to your desktop
+Clone this repository to your desktop  
 Open the javascript file within the assets directory in your preferred code editor
 
 ![]()
 
 ## Usage
 Browse through the files to see how one may apply these basic javascript techniques.  
-To run the application, simply right click on the index.html file and click open with live server or preferred browser options.
+To run the application, simply right click on the index.html file and click open with live server or preferred browser options.  
 To see any changes you may desire to experiment with and see in real time, use the live server option.  
 
-[usage, click here to see how to access javascript file](assets/images/Screenshot 2022-10-03 220939.png)
+[Usage Help](src = "assets/images/Screenshot 2022-10-03 220939.png")
 
 ### Resources:  
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event  
