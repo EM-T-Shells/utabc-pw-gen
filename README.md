@@ -1,7 +1,7 @@
 # utabc-pw-gen
 basic password generator
 ## Description
-The purpose for this project was to display a few basic ways on how to apply JavaScript to HTML and CSS. Through a basic password generator application, you will find how user-input can be manipulated through the DOM and by using simple Web API's. Learning how to implement JavaScript methods to grab user input data and displaying the desired output data on the client-side's display. In addition to the form data, validating the user input is also important. In this particular application, the form is validated by havign at least one checkbox, checked. If not, the user is notified to do so. The password generator function uses useful methods such as Math.random, which makes creating a unique output an easy process. Lastly, this genrator was not used via implenting free hand arrays for the character options. ASCII has a useful list which matches numbers with each UTF-8 accepted character. This saves tiem and creates a cleaner code by using array based off the pre-made template. 
+The purpose for this project was to display a few basic ways on how to apply JavaScript to HTML and CSS. Through a basic password generator application, you will find how user-input can be manipulated through the DOM and by using simple Web API's. Learning how to implement JavaScript methods to grab user input data and displaying the desired output data on the client-side's display. In addition to the form data, validating the user input is also important. In this particular application, the form is validated by having at least one checkbox, checked. If not, the user is notified to do so. The password generator function uses useful methods such as Math.random, which makes creating a unique output an easy process. Lastly, this generator was not used via implementing free hand arrays for the character options. ASCII has a useful list which matches numbers with each UTF-8 accepted character. This saves time and creates a cleaner code by using array based off the pre-made template. 
 
 
 ## Installation
@@ -15,7 +15,7 @@ Browse through the files to see how one may apply these basic javascript techniq
 To run the application, simply right click on the index.html file and click open with live server or preferred browser options.  
 To see any changes you may desire to experiment with and see in real time, use the live server option.  
 
-[Usage Help](src = "assets/images/Screenshot 2022-10-03 220939.png")
+[Usage Help](assets/images/Screenshot.png)
 
 ### Resources:  
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event  
@@ -47,5 +47,4 @@ https://www.asciitable.com/
 ###
 ###
 
-![tag](#)
-
+![tag](assets/images/matrix-logic25-font.png)
